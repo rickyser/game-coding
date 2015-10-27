@@ -1,0 +1,38 @@
+class ButtonSpawner : ZilchComponent
+{
+    
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(Zero.Keyboard,Events.KeyDown,this.OnKeyDown);
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        
+    }
+    
+function OnKeyDown(event : KeyboardEvent)
+{
+    
+    Console.WriteLine("Hello");
+    if (event.Key == Keys.Space)
+    {
+        var spawnPosition = this.Owner.Transform.Translation;
+        var archetypeSpawn = Archetype.Find("bulit");
+        var createdbulit = this.Space.CreateAtPosition(archetypeSpawn, spawnPosition);
+        var person = this.Space.FindObjectByName("person").Transform.Translation;
+        Console.WriteLine(person);
+        person.X -= this.Owner.Transform.Translation.X;
+        person.Y -= this.Owner.Transform.Translation.Y;
+        person = Math.Normalize(person);
+        Console.WriteLine(person);
+        person = 25* person;
+        createdbulit.RigidBody.Velocity = person;
+    this.Owner.Orientation.LookAtPoint(person);
+    //Console.WriteLine(person);
+            //Console.WriteLine("yo");
+            
+        }
+    }
+}

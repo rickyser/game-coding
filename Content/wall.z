@@ -1,0 +1,19 @@
+class Wall : ZilchComponent
+{
+    var Health : Real = 5.0;
+    function Initialize(init : CogInitializer)
+    {
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStart);
+    }
+
+    function OnCollisionStart(event : CollisionEvent)
+    {
+    var otherObject = event.OtherObject;
+    if (otherObject.Name == "person")
+    
+    {
+        this.Space.ReloadLevel();
+    }
+}
+}

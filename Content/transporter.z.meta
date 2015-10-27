@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "transporter",
+		uint64 ResourceId = 561ab3ee3f0eddd4,
+	},
+},

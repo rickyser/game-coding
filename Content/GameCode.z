@@ -1,0 +1,74 @@
+class GameCode : ZilchComponent
+{
+   [Property]
+    var Speed : Real = 0.5;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner,Events.CollisionEnded, this.OnCollisionEnded);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        
+        if (Zero.Keyboard.KeyIsDown(Keys.Up))
+        {
+            Console.WriteLine("Up Arrow Pressed");
+            var temp = this.Owner.Transform.Translation;
+            temp.Y +=this.Speed;
+            this.Owner.Transform.Translation = temp;
+            
+    }
+    if (Zero.Keyboard.KeyIsDown(Keys.Right))
+    {
+        Console.WriteLine("Right:Arrow Pressed");
+        var temp = this.Owner.Transform.Translation;
+        temp.X +=this.Speed;
+        this.Owner.Transform.Translation = temp;
+        
+        }
+        if (Zero.Keyboard.KeyIsDown(Keys.Left))
+        {
+            Console.WriteLine("Left Arrow Pressed");
+            var temp = this.Owner.Transform.Translation;
+            temp.X +=-this.Speed;
+            this.Owner.Transform.Translation = temp;
+            
+    }
+    
+    if (Zero.Keyboard.KeyIsDown(Keys.Down))
+        {
+            Console.WriteLine("Down Arrow Pressed");
+            var temp = this.Owner.Transform.Translation;
+            temp.Y +=-this.Speed;
+            this.Owner.Transform.Translation = temp;
+            
+    }
+    }
+ function OnCollisionStarted(event : CollisionEvent)
+    {
+        var otherObject = event.OtherObject;
+        if(otherObject.Name == "block")
+        {
+        var orange = Real4(1.0,0.5,0.0,1.0);
+        this.Owner.Sprite.Color = orange;
+    }
+    }
+function OnCollisionEnded(event : CollisionEvent)
+    {
+        var black = Real4(0,0,0,1.0);
+        this.Owner.Sprite.Color = black;
+        
+        //function OnLogicUpdate(event: UpdateEvent)
+        
+        if(Zero.Keyboard.KeyIsDown(Keys.Space))
+        {
+        this.Owner.Collider.SendsEvents = false;
+        }
+        else 
+        {
+        this.Owner.Collider.SendsEvents = true;
+        }
+    }
+}

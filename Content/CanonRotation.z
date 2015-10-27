@@ -1,0 +1,17 @@
+class CanonRotation : ZilchComponent
+{
+    [Property]
+    var RotationSpeed : Real = 30.0;
+
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+//REQUIRES ORIENTATION
+function OnLogicUpdate(event : UpdateEvent)
+{
+    var person = this.Space.FindObjectByName("person").Transform.Translation;
+    this.Owner.Orientation.LookAtPoint(person);
+    //Console.WriteLine(this.Owner.Transform.Translation);
+    }
+}

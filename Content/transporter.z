@@ -1,0 +1,36 @@
+class Transporter : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.CollisionEnded, this.OnCollisionEnded);
+        Zero.Connect(this.Space, Events.CollisionStarted, this.OnCollisionStarted);
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+}
+
+        function OnCollisionStarted(event : CollisionEvent)
+    {
+        Console.WriteLine("hello");
+        var otherObject = event.OtherObject;
+        if(otherObject.Name == "block")
+        {
+        var orange = Real4(1.0,0.5,0.0,1.0);
+        this.Owner.Sprite.Color = orange;
+    }
+    }
+function OnCollisionEnded(event : CollisionEvent)
+    {
+        var white = Real4(1.0,1.0,1.0,1.0);
+        this.Owner.Sprite.Color = white;
+    
+//function OnLogicUpdate(event: UpdateEvent)
+        
+        /*if(Zero.Keyboard.KeyIsDown(Keys.Space))
+        {
+        this.Owner.Collider.SendsEvents = false;
+        }
+        else 
+        {
+        this.Owner.Collider.SendsEvents = true;
+        */}
+    }
+    

@@ -1,0 +1,27 @@
+ImageContent = 
+{
+	ContentTags = 
+	{
+		Array Tags = 
+		[
+			"HeightMapTextures",
+		],
+	},
+	TextureBuilder = 
+	{
+		string Name = "RockNormal",
+		uint64 ResourceId = 547bd3a404128d53,
+		BuilderTextureType TextureType = Texture2D,
+		RgbUsage RgbUsage = Normal,
+		AlphaUsage AlphaUsage = Transparency,
+		TextureCompression Compression = Compressed,
+		TextureWrapping Wrapping = Repeat,
+		TextureFilter Filter = Trilinear,
+		float Anisotropy = 1,
+		MipGeneration MipGeneration = All,
+		ImageFilter MipFilter = Box,
+		FixPowerOf2 FixPowerOf2 = Auto,
+		ImageFilter ResizeFilter = Box,
+		OutputTextureFormat Format = Updated,
+	},
+},

@@ -1,0 +1,17 @@
+class HealthScript : ZilchComponent
+{
+    [Property] var Health : Real = 5;
+    function Initialize(init : CogInitializer)
+    {
+        Console.WriteLine(this.Health);
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(this.Health == 0)
+        {
+            this.Space.ReloadLevel();
+        }
+    }
+}

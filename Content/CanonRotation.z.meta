@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "CanonRotation",
+		uint64 ResourceId = 5632f783941df7c5,
+	},
+},
