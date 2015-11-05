@@ -6,7 +6,7 @@ Cog =
 		string ProjectOwner = "",
 		string DefaultLevel = "Level",
 		string ProjectSpace = "Space",
-		string ProjectFolder = "C:\Users\17.enrique.serrano\Documents\ZeroProjects\game",
+		string ProjectFolder = "C:\Users\17.enrique.serrano\Desktop\github\game-coding",
 		uint ProjectEngineRevision = 12259,
 		bool AutoTakeProjectScreenshot = true,
 	},

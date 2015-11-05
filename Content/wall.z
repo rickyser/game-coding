@@ -13,7 +13,7 @@ class Wall : ZilchComponent
     if (otherObject.Name == "person")
     
     {
-        this.Space.ReloadLevel();
+        //this.Space.ReloadLevel();
     }
 }
 }
