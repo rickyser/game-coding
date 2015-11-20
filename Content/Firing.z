@@ -11,7 +11,7 @@ class Firing : ZilchComponent
         this.Timer += event.Dt;
          var chaseDirection = this.Space.FindObjectByName("person").Transform.Translation - this.Owner.Transform.Translation;
         var distanceFromTarget = Math.Length(chaseDirection);
-        if(distanceFromTarget < 6 && this.Timer > 3)
+        if(distanceFromTarget < 6 && this.Timer > 6)
         {
             this.Timer = 0;
             var spawnPosition = this.Owner.Transform.Translation;

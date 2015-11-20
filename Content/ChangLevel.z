@@ -1,0 +1,15 @@
+class ChangLevel : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        var space = this.GameSession.CreateSpace(Archetype.Find("Space"));
+        space.LoadLevel(Level.Find("Level"));
+        this.Space.Destroy();
+        space.FindFirstObjectByName("Person").Transform.Translation = Real3(46.5,-46.5,0);
+    }
+}

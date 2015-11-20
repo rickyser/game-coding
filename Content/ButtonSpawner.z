@@ -1,4 +1,4 @@
-class ButtonSpawner : ZilchComponent
+/*class ButtonSpawner : ZilchComponent
 {
     
     function Initialize(init : CogInitializer)
@@ -36,3 +36,4 @@ function OnKeyDown(event : KeyboardEvent)
         }
     }
 }
+*/
