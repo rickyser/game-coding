@@ -1,0 +1,21 @@
+class Cameratimer : ZilchComponent
+{
+    var Timer : Real = 0.0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Timer += event.Dt;
+        if(this.Timer >20)
+        {
+            this.Owner.Camera.Size = 5;
+            var temp = this.Space.FindObjectByName("person").Transform.Translation;
+            temp.Z = 40;
+            this.Owner.Transform.Translation = temp;
+        Console.WriteLine("hello");
+    }
+}
+}

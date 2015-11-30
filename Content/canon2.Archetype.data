@@ -10,11 +10,11 @@ Cog =
 	},
 	Archetyped = 
 	{
-		string Name = "56318e7fefd4d3d8:canon",
+		string Name = "56420747a51f26a8:canon2",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [-3.73307014, -33.8178406, 1],
+		Vec3 Translation = [0, 0, 0],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -52,7 +52,7 @@ Cog =
 		bool Asleep = false,
 		bool Kinematic = false,
 		bool RotationLocked = false,
-		bool Mode2D = true,
+		bool Mode2D = false,
 		bool AllowSleep = true,
 		bool Inherit2DMode = true,
 		Vec3 Velocity = [0, 0, 0],
@@ -60,10 +60,6 @@ Cog =
 	},
 	ButtonSpawner = 
 	{
-	},
-	CanonRotation = 
-	{
-		float RotationSpeed = 30,
 	},
 	Orientation = 
 	{

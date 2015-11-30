@@ -103,7 +103,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [6.76601982, -0.669752955, 50],
+			Vec3 Translation = [3.37212372, 0.445647061, 90],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -123,7 +123,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [6.76601982, -0.669752955, 1.89050297e-007],
+			Vec3 LookTarget = [3.37212372, 0.445647061, 40],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -147,7 +147,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-46.4826927, 46.6607857, 0],
+			Vec3 Translation = [-46.5, 46.5, 0],
 			Vec3 Scale = [5, 5, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -9822,11 +9822,1396 @@ Level =
 		},
 		Named = 
 		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -1],
+			Vec3 Scale = [28, 28, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "565a1d15bf5de370:image14",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 157,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-29.5, 31, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 7,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 158,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-34.9580688, 24.1495667, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 7,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 159,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-18.9180298, 41.3591881, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 7,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 160,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-29.6231041, 3.0553894, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 161,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-7.53091049, 46.5295563, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 7,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 162,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.04781055, 46.5111084, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 163,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [25.5225143, 30.3413792, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 7,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 164,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [41.4694557, 13.9500999, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 165,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [47.1272621, -2.34273529, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 7,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 166,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-40.3331528, -40.6465302, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 167,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-7.34127808, -13.0096817, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 168,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [3.3687706, 19.2435684, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 169,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-18.4206352, -24.0274887, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 170,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [3.79963684, -29.0747547, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 171,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [20.3571243, -2.54584122, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 172,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [3.98429489, -46.6170731, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 173,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [13.4633007, -46.3708649, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 174,
+		},
+		Named = 
+		{
+			string Name = "canon1.1",
+		},
+		Archetyped = 
+		{
+			string Name = "56420747a51f26a8:canon2",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [47.0588112, -41.2877655, 3.81469727e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "560828f075eac573:canon-1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 0, 1],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		Firing = 
+		{
+			float Distance = 6,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 175,
+		},
+		Named = 
+		{
 			string Name = "person",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-46.5038681, 46.6707573, 0],
+			Vec3 Translation = [-46.5, 46.5, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -9901,134 +11286,40 @@ Level =
 		},
 		Hierarchy = 
 		{
-			Cog = 
-			{
-				LinkId = 
-				{
-					uint Id = 157,
-				},
-				Named = 
-				{
-					string Name = "Camera",
-				},
-				Transform = 
-				{
-					Vec3 Translation = [-0.00747483969, -0.167255461, 40],
-					Vec3 Scale = [4.99999952, 4.99999952, 1],
-					Quat Rotation = [0, 0, 0, 1],
-				},
-				Camera = 
-				{
-					ProjectionMode ProjectionMode = Orthographic,
-					Facing Facing = NegativeZ,
-					CameraTransparentSort TransparentSort = InheritFromSpace,
-					float FieldOfView = 45,
-					float NearPlane = 0.5,
-					float FarPlane = 200,
-					float Size = 20,
-				},
-				SoundListener = 
-				{
-					bool Active = true,
-				},
-			},
-			Cog = 
-			{
-				LinkId = 
-				{
-					uint Id = 158,
-				},
-				Named = 
-				{
-					string Name = "Camera",
-				},
-				Transform = 
-				{
-					Vec3 Translation = [0.0130549073, -0.16870594, 40],
-					Vec3 Scale = [2, 2, 1],
-					Quat Rotation = [0, 0, 0, 1],
-				},
-				Camera = 
-				{
-					ProjectionMode ProjectionMode = Orthographic,
-					Facing Facing = NegativeZ,
-					CameraTransparentSort TransparentSort = InheritFromSpace,
-					float FieldOfView = 45,
-					float NearPlane = 0.5,
-					float FarPlane = 200,
-					float Size = 20,
-				},
-				SoundListener = 
-				{
-					bool Active = true,
-				},
-			},
-			Cog = 
-			{
-				LinkId = 
-				{
-					uint Id = 2,
-				},
-				Named = 
-				{
-					string Name = "Camera",
-				},
-				Transform = 
-				{
-					Vec3 Translation = [0.0828149319, -0.354961395, 40],
-					Vec3 Scale = [1, 1, 1],
-					Quat Rotation = [0, 0, 0, 1],
-				},
-				Camera = 
-				{
-					ProjectionMode ProjectionMode = Orthographic,
-					Facing Facing = NegativeZ,
-					CameraTransparentSort TransparentSort = InheritFromSpace,
-					float FieldOfView = 45,
-					float NearPlane = 0.5,
-					float FarPlane = 200,
-					float Size = 20,
-				},
-				SoundListener = 
-				{
-					bool Active = true,
-				},
-			},
 		},
 	},
 	Cog = 
 	{
 		LinkId = 
 		{
-			uint Id = 159,
+			uint Id = 2,
 		},
 		Named = 
 		{
-			string Name = "Sprite",
+			string Name = "Camera",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, -1],
-			Vec3 Scale = [28, 28, 1],
+			Vec3 Translation = [-0.0616416931, -0.0753364563, 40],
+			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Sprite = 
+		Camera = 
 		{
-			bool Visible = true,
-			bool VisibilityCulling = true,
-			bool VisibilityEvents = true,
-			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 1],
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "565a1d15bf5de370:image14",
-			bool RenderMask = false,
-			bool FlipX = false,
-			bool FlipY = false,
-			bool AnimationActive = true,
-			float AnimationSpeed = 1,
-			uint StartFrame = 0,
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = InheritFromSpace,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 115,
+		},
+		SoundListener = 
+		{
+			bool Active = true,
+		},
+		Cameratimer = 
+		{
 		},
 	},
 },

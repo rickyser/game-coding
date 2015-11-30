@@ -1,0 +1,19 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "canon2",
+		uint64 ResourceId = 56420747a51f26a8,
+		string LoaderType = "Cog",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+	ContentTags = 
+	{
+		Array Tags = 
+		[
+			"Archetype",
+			"Cog",
+		],
+	},
+},
