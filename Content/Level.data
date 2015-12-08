@@ -90,6 +90,9 @@ Level =
 			int HilightInterval = 10,
 			bool FollowEditorCamera = false,
 		},
+		ChangeLevel = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -103,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0.691663444, -0.504254818, 50],
+			Vec3 Translation = [0, 0, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -123,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0.691663444, -0.504254818, -1.00069747e-006],
+			Vec3 LookTarget = [0, 0, 0],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -7313,7 +7316,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	Cog = 
@@ -7383,20 +7386,17 @@ Level =
 			Vec3 ForwardVector = [0, 1, 0],
 			OrientationBases DefaultBases = ForwardYUpZ,
 		},
-		Firing = 
+		Firings = 
 		{
-			float Distance = 0,
+			float Distance = 6,
 		},
 	},
-	Cog = 
+	ArchetypeInstance = 
 	{
+		string Name = "56318e7fefd4d3d8:canon",
 		LinkId = 
 		{
 			uint Id = 132,
-		},
-		Named = 
-		{
-			string Name = "canon1",
 		},
 		Transform = 
 		{
@@ -7404,60 +7404,9 @@ Level =
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Sprite = 
+		Named = 
 		{
-			bool Visible = true,
-			bool VisibilityCulling = true,
-			bool VisibilityEvents = true,
-			bool CastShadows = false,
-			Vec4 Color = [0.985000014, 0.975149989, 0.975149989, 1],
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-			string SpriteSource = "560828f075eac573:canon-1",
-			bool RenderMask = false,
-			bool FlipX = false,
-			bool FlipY = true,
-			bool AnimationActive = true,
-			float AnimationSpeed = 1,
-			uint StartFrame = 0,
-		},
-		BoxCollider = 
-		{
-			bool Ghost = true,
-			bool SendsMessages = true,
-			bool Seamless = true,
-			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
-			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, 0, 0],
-			Vec3 Size = [0.5, 0.5, 0.5],
-		},
-		RigidBody = 
-		{
-			bool Static = true,
-			bool Asleep = false,
-			bool Kinematic = false,
-			bool RotationLocked = false,
-			bool Mode2D = true,
-			bool AllowSleep = true,
-			bool Inherit2DMode = true,
-			Vec3 Velocity = [0, 0, 0],
-			Vec3 AngularVelocity = [0, 0, 0],
-		},
-		CanonRotation = 
-		{
-			float RotationSpeed = 30,
-		},
-		Orientation = 
-		{
-			Vec3 GlobalUp = [0, 0, 1],
-			Vec3 UpVector = [0, 0, 1],
-			Vec3 ForwardVector = [0, 1, 0],
-			OrientationBases DefaultBases = ForwardYUpZ,
-		},
-		Firing = 
-		{
-			float Distance = 0,
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7475,7 +7424,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7493,7 +7442,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7511,7 +7460,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7529,7 +7478,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7547,7 +7496,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7565,7 +7514,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7583,7 +7532,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7601,7 +7550,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7619,7 +7568,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7637,7 +7586,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7655,7 +7604,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7673,7 +7622,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7691,7 +7640,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7709,7 +7658,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7727,7 +7676,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	ArchetypeInstance = 
@@ -7745,7 +7694,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	Cog = 
@@ -20559,7 +20508,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "canon1.1",
+			string Name = "canon1",
 		},
 	},
 	Cog = 

@@ -6,7 +6,7 @@ Cog =
 	},
 	Named = 
 	{
-		string Name = "canon1.1",
+		string Name = "canon1",
 	},
 	Archetyped = 
 	{
@@ -72,7 +72,7 @@ Cog =
 		Vec3 ForwardVector = [0, 1, 0],
 		OrientationBases DefaultBases = ForwardYUpZ,
 	},
-	Firing = 
+	Firings = 
 	{
 		float Distance = 6,
 	},

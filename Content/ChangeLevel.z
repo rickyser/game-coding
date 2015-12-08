@@ -1,0 +1,26 @@
+class ChangeLevel : ZilchComponent
+{
+    var Level : Level = Level.Find("Level");
+    var Level2 : Level = Level.Find("Level2");
+    var Level3 : Level = Level.Find("Level3");
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(Zero.Keyboard.KeyIsPressed(Keys.One))
+        {
+            this.Space.LoadLevel(this.Level);
+        }
+        if(Zero.Keyboard.KeyIsPressed(Keys.Two))
+        {
+            this.Space.LoadLevel(this.Level2);
+        }
+        if(Zero.Keyboard.KeyIsPressed(Keys.Three))
+        {
+            this.Space.LoadLevel(this.Level3);
+        }
+    }
+}
